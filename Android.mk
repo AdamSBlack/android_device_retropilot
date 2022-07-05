@@ -16,5 +16,3 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
- $(call inherit-product, device/retropilot/retros/retros-vendor.mk)
- $(call inherit-product, device/retropilot/retros/Android.mk)
