@@ -12,11 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(PRODUCT_IS_ATV),true)
 
 LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(call inherit-product, device/retropilot/retros/retros-vendor.mk)
+include $(call inherit-product, device/retropilot/retros/Android.mk)
 
 endif
 
